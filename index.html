@@ -1,1050 +1,632 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		
-		<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-		<meta http-equiv="content-script-type" content="text/javascript" />
-		<meta http-equiv="content-style-type" content="text/css" />
-		<meta http-equiv="content-language" content="nl" />
-		
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		
-		<meta name="author" content="Pascal van Gemert" />	
-		<meta name="description" content="I'm Mutahir Sohail, a JS developer" />
-		<meta name="keywords" content="Pascal van Gemert, Interactive Resume, PHP programmer, Web developer, Startup, Interactive CV, Resume, CV, Whoopaa, HRMatches, Sanitairwinkel, Algorithms, PHP, MySQL, OOP" />
-		<meta name="robots" content="index, follow" />
-		<meta name="revisit-after" content="14 days" />
-			
-		<title>Mutahir Sohail  - JavaScript Developer - Interactive Resume</title>
-		
-		<!-- Bootstrap core CSS -->
-		<!-- <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,600,700" rel="stylesheet" type="text/css" /> -->
-		<link href="./view/css/bootstrap.min.css" rel="stylesheet" />
-		<link href="./view/styles.css" rel="stylesheet" />
-<!-- 		
-		<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-		<link rel="icon" href="/favicon.ico" type="image/x-icon" /> -->
-		
-		<!--[if lt IE 9]>
-			<script src="/view/js/html5shiv.js"></script>
-			<script src="/view/js/respond.min.js"></script>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="content-script-type" content="text/javascript" />
+    <meta http-equiv="content-style-type" content="text/css" />
+    <meta http-equiv="content-language" content="nl" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Pascal van Gemert" />
+    <meta name="description" content="I'm Mutahir Sohail, a JS developer" />
+    <meta name="keywords" content="Pascal van Gemert, Interactive Resume, PHP programmer, Web developer, Startup, Interactive CV, Resume, CV, Whoopaa, HRMatches, Sanitairwinkel, Algorithms, PHP, MySQL, OOP" />
+    <meta name="robots" content="index, follow" />
+    <meta name="revisit-after" content="14 days" />
+    <title>Mutahir Sohail - JavaScript Developer - Interactive Resume</title>
+    <!-- Bootstrap core CSS -->
+    <!-- <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,600,700" rel="stylesheet" type="text/css" /> -->
+    <link href="./view/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="./view/styles.css" rel="stylesheet" />
+    <!-- 		
+		<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" /><link rel="icon" href="/favicon.ico" type="image/x-icon" /> -->
+    <!--[if lt IE 9]>
+		<script src="/view/js/html5shiv.js"></script>
+		<script src="/view/js/respond.min.js"></script>
 		<![endif]-->
-		
-		<!-- Begin Inspectlet Embed Code -->
-		<script type="text/javascript" id="inspectletjs">
-			window.__insp = window.__insp || [];
-			__insp.push(['wid', 92785244]);
-			(function() {
-				function __ldinsp(){var insp = document.createElement('script'); insp.type = 'text/javascript'; insp.async = true; insp.id = "inspsync"; insp.src = ('https:' == document.location.protocol ? 'https' : 'http') + '://www.inspectlet.com/inspectlet.js'; var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(insp, x); }
-				if (window.attachEvent){
-					window.attachEvent('onload', __ldinsp);
-				}else{
-					window.addEventListener('load', __ldinsp, false);
-				}
-			})();
-		</script>
-		<!-- End Inspectlet Embed Code -->
-	</head>
-	<body data-spy="scroll" data-target="#navbar-example">	 
-		
-		
-			
-		<div id="top" class="jumbotron" data-src="/view/images/taxi_drive_by_animation.gif" data-position="center center">
-			<div class="container">
-				<h1>Mutahir Sohail</h1>
-				<p class="lead">Interactive resume</p>
-			</div>
-			
-			<div class="overlay"></div>
-			
-			<a href="#profile" class="scroll-down">	
-				<span class="glyphicon glyphicon-chevron-down"></span>
-			</a>
-		</div>
-		
-		<nav class="navbar navbar-default" id="navbar-example" role="navigation">
-			<!-- Brand and toggle get grouped for better mobile display -->
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-			</div>
-
-			<!-- Collect the nav links, forms, and other content for toggling -->
-			<div class="collapse navbar-collapse navbar-ex1-collapse">
-				<ul class="nav navbar-nav">
-					<li class="active"><a href="#profile">Profile</a></li>
-					<li><a href="#experiences">Experiences</a></li>
-					<li><a href="#abilities">Abilities</a></li>
-										<li><a href="#projects">Projects</a></li>
-					<li><a href="#contact">Contact</a></li>
-				</ul>
-			</div><!-- /.navbar-collapse -->
-		</nav>
-		
-		<div class="background-white">
-			<div id="profile" class="container">
-				<h2>Profile</h2>
-<p class="lead">I&#039;m a creative JavaScript developer</p>
-
-<hr />
-
-<div class="row">
-	<div class="col-md-4">
-		<h3>About me</h3>
-		<p>
-			I am an allround javascript developer. I am a professional front end developer with expertise in Angular and good knowledge of back-end api development too. Code scalability, optimization and structure is what I love during coding.Problem solving is one of my best traits and this has helped me a lot improving my attention to detail in development. Lastly , team collaboration is one of the most beautiful aspect of product development and I enjoy working as a team.
-		</div>
-	<div class="col-md-4 text-center">
-		<img style="border-radius:50% ;" src="./view/images/1517044907635.jpg" alt="Pascal van Gemert" width="246" height="246" />
-	</div>
-	<div class="col-md-4">
-		<h3>Details</h3>
-		<p>
-			<strong>Name:</strong><br />
-			Mutahir Sohail<br />
-			<strong>Age:</strong><br />
-			25 years<br />
-			<strong>Location:</strong><br />
-			'Lahore, Pakistan	</p>
-		
-		<a href="https://twitter.com/pascalvgemert" class="twitter-follow-button" data-show-count="false" data-size="large" data-show-screen-name="false">Follow @pascalvgemert</a>
-		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-	</div>
-</div>
-
-			</div>	
-		</div>	
-		
-		<div id="experiences" class="container">
-			<h2>Experiences</h2>
-
-
-<hr />
-
-<!--<div class="alert alert-danger">
-	<strong>Looking for an awesome new challenge somewhere in the neighborhood of Den Bosch or Amsterdam as a Creative PHP Web Developer. </strong>
-</div>-->
-
-<h3>Educations</h3>
-
-
-<div class="experiences">
-
-					
-	<div class="experience row">
-		<div class="col-md-4">
-			<h4>National University of Science and Technology(NUST)</h4>
-			<p class="experience-period">
-				Sept 2014				- 
-				June 2018			</p>
-		</div>
-		<div class="col-md-8">
-			<p>
-				<strong>Bachelor - Electrical Engineering Science</strong>
-				<span class="hidden-phone">
-				My courses in Electrical Engineering were more inclined towards coding. We studied OOP,Datastructures,Basic programming and databases. Moreover, we had embedded systems which was assembly language based. My final year project was related to Machine Learning and Embedded systems in which we used Python Programming language.
-				</span>
-				<span class="experience-details">
-					<span class="location">
-						<span class="glyphicon glyphicon-map-marker"></span>
-						'Islamabad, Pakistan					</span>
-				</span>
-			</p>
-		</div>
-	</div>
-	
-					
-	
-	
-</div>
-	
-	
-
-<hr />
-
-<h3>Careers</h3>
-
-
-<div class="experiences">
-
-	<div class="experience row">
-		<div class="col-md-4">
-			<h4>Digitify</h4>
-			<p class="experience-period">
-				Feb 2022				- 
-				May 2023			</p>
-		</div>
-		<div class="col-md-8">
-			<p>
-				<strong>Software Engineer</strong>
-				<span class="hidden-phone">
-					I am working as an Angular Developer for development of couple of Admin dashboard panels for Operations Team. These dashboards
-					are being linked to a fintech wallet. The purpose are extensive operations related to fintech wallet i.e transaction,roles,kyc,configurations,fee management and
-					compliance screening etc.
-					<span class="experience-details">
-					<span class="location">
-						<span class="glyphicon glyphicon-map-marker"></span>
-						Lahore					</span>
-					
-										
-					<span class="seperator">|</span>
-					<span class="link">
-						<span class="glyphicon glyphicon-link"></span>
-						<a href="http://startselect.com" target="_blank">https://digitify.com/</a>
-					</span>
-					
-										
-				</span>
-			</p>
-		</div>
-	</div>
-					
-	<div class="experience row">
-		<div class="col-md-4">
-			<h4>Emblem technologies</h4>
-			<p class="experience-period">
-				Apr 2021				- 
-				Jan 2022			</p>
-		</div>
-		<div class="col-md-8">
-			<p>
-				<strong>Fulltime - Angular Developer</strong>
-				<span class="hidden-phone">
-					Working as a Front End Developer(Angular). I am working on a Tax Compliant Point of Sales(POS) for a bakery with 21 branches within the city. Also I am working on their admin portal that is responsible for 
-					reports ,roles, inventory and products management. I have also working as a team lead for a project in the front end team managing two junior developers.
-					<span class="experience-details">
-					<span class="location">
-						<span class="glyphicon glyphicon-map-marker"></span>
-						Lahore					</span>
-					
-										
-					<span class="seperator">|</span>
-					<span class="link">
-						<span class="glyphicon glyphicon-link"></span>
-						<a href="http://startselect.com" target="_blank">https://www.emblemtechnologies.com/</a>
-					</span>
-					
-										
-				</span>
-			</p>
-		</div>
-	</div>
-	
-					
-	<div class="experience row">
-		<div class="col-md-4">
-			<h4>Devstudio</h4>
-			<p class="experience-period">
-				Jan 2020				- 
-				Mar 2021			</p>
-		</div>
-		<div class="col-md-8">
-			<p>
-				<strong>Fulltime - Angular Developer</strong>
-				<span class="hidden-phone">
-					I joined this company as an intern software engineer. I have worked on couple of projects in this company. I have woeked on a basic resume builder application using nodeJS and Angular. Moreover, I have worked on a client web application that was basically a real time dashboard giving logs of products being scanned remotely. Also I have 
-					worked as an ionic developer on an in house application.
-
-					<span class="experience-details">
-					<span class="location">
-						<span class="glyphicon glyphicon-map-marker"></span>
-						Lahore, Pakistan					</span>
-					
-										
-					<span class="seperator">|</span>
-					<span class="link">
-						<span class="glyphicon glyphicon-link"></span>
-						<a href="http://thesecretlab.nl" target="_blank">https://devstudio.us/</a>
-					</span>
-					
-										
-				</span>
-			</p>
-		</div>
-	</div>
-	
-	
-</div>
-	
-		</div>
-		
-		<div class="background-white">
-			<div id="abilities" class="container">
-				<h2>Abilities</h2>
-<p class="lead">
-	&ldquo;knowledge has a beginning but no end&rdquo;<br />- Talib Kweli
-</p>
-
-<hr />
-
-<h3>Skills</h3>
-
-<div class="row">
-
-		
-	<div class="col-md-6">
-		<ul class="no-bullets">
-		
-			<li>
-				<span class="ability-title">Javascript</span>
-				<span class="ability-score">
-				
-								
-					<span class="glyphicon glyphicon-star filled"></span>
-					
-								
-					<span class="glyphicon glyphicon-star filled"></span>
-					
-								
-					<span class="glyphicon glyphicon-star filled"></span>
-					
-								
-					<span class="glyphicon glyphicon-star filled"></span>
-					
-								
-					<span class="glyphicon glyphicon-star "></span>
-					
-									
-				</span>
-			</li>
-			
-				
-			<li>
-				<span class="ability-title">Bootstrap Framework</span>
-				<span class="ability-score">
-				
-								
-					<span class="glyphicon glyphicon-star filled"></span>
-					
-								
-					<span class="glyphicon glyphicon-star filled"></span>
-					
-								
-					<span class="glyphicon glyphicon-star filled"></span>
-					
-								
-					<span class="glyphicon glyphicon-star filled"></span>
-										
-					<span class="glyphicon glyphicon-star "></span>
-									
-				</span>
-			</li>
-			
-						
-			<li>
-				<span class="ability-title">CSS(3)</span>
-				<span class="ability-score">
-				
-								
-					<span class="glyphicon glyphicon-star filled"></span>
-					
-								
-					<span class="glyphicon glyphicon-star filled"></span>
-					
-								
-					<span class="glyphicon glyphicon-star filled"></span>
-					
-								
-					<span class="glyphicon glyphicon-star filled"></span>
-										
-					<span class="glyphicon glyphicon-star "></span>
-									
-				</span>
-			</li>
-			
-					
-			<li>
-				<span class="ability-title">HTML(5)</span>
-				<span class="ability-score">
-				
-								
-					<span class="glyphicon glyphicon-star filled"></span>
-					
-								
-					<span class="glyphicon glyphicon-star filled"></span>
-					
-								
-					<span class="glyphicon glyphicon-star filled"></span>
-					
-								
-					<span class="glyphicon glyphicon-star filled"></span>
-										
-					<span class="glyphicon glyphicon-star "></span>
-									
-				</span>
-			</li>	
-				
-			<li>
-				<span class="ability-title">Command line Inteface</span>
-				<span class="ability-score">
-				
-								
-					<span class="glyphicon glyphicon-star filled"></span>
-					
-								
-					<span class="glyphicon glyphicon-star filled"></span>
-					
-								
-					<span class="glyphicon glyphicon-star filled"></span>
-					
-								
-					<span class="glyphicon glyphicon-star "></span>
-
-					
-								
-					<span class="glyphicon glyphicon-star "></span>
-					
-									
-				</span>
-			</li>
-			
-					
-				
-			<li>
-				<span class="ability-title">JQuery</span>
-				<span class="ability-score">
-				
-								
-					<span class="glyphicon glyphicon-star filled"></span>
-					
-								
-					<span class="glyphicon glyphicon-star filled"></span>
-					
-								
-					<span class="glyphicon glyphicon-star filled"></span>
-					
-								
-					<span class="glyphicon glyphicon-star "></span>
-
-					
-								
-					<span class="glyphicon glyphicon-star "></span>
-					
-									
-				</span>
-			</li>
-			
-			
-			
-			 
-			
-		</ul>
-	</div>
-	<div class="col-md-6">
-		<ul class="no-bullets">
-			
-					
-				
-			<li>
-				<span class="ability-title">Object Orientated Programming</span>
-				<span class="ability-score">
-				
-								
-					<span class="glyphicon glyphicon-star filled"></span>
-					
-								
-					<span class="glyphicon glyphicon-star filled"></span>
-					
-								
-					<span class="glyphicon glyphicon-star filled"></span>
-					
-								
-					<span class="glyphicon glyphicon-star filled"></span>
-					
-								
-					<span class="glyphicon glyphicon-star "></span>
-					
-									
-				</span>
-			</li>
-			
-					
-				
-			<li>
-				<span class="ability-title">SASS / SCSS</span>
-				<span class="ability-score">
-				
-								
-					<span class="glyphicon glyphicon-star filled"></span>
-					
-								
-					<span class="glyphicon glyphicon-star filled"></span>
-					
-								
-					<span class="glyphicon glyphicon-star filled"></span>
-					
-								
-					<span class="glyphicon glyphicon-star filled"></span>
-					
-								
-					<span class="glyphicon glyphicon-star "></span>
-					
-									
-				</span>
-			</li>
-						
-			<li>
-				<span class="ability-title">Angular</span>
-				<span class="ability-score">
-				
-								
-					<span class="glyphicon glyphicon-star filled"></span>
-					
-								
-					<span class="glyphicon glyphicon-star filled"></span>
-					
-								
-					<span class="glyphicon glyphicon-star filled"></span>
-
-					<span class="glyphicon glyphicon-star filled"></span>
-
-					
-								
-					<span class="glyphicon glyphicon-star "></span>
-					
-									
-				</span>
-			</li>
-			
-			<li>
-				<span class="ability-title">Node JS</span>
-				<span class="ability-score">
-				
-								
-					<span class="glyphicon glyphicon-star filled"></span>
-					
-								
-					<span class="glyphicon glyphicon-star filled"></span>
-					
-								
-					<span class="glyphicon glyphicon-star "></span>
-					<span class="glyphicon glyphicon-star "></span>
-
-
-					
-								
-					<span class="glyphicon glyphicon-star "></span>
-					
-									
-				</span>
-			</li>	
-				
-		
-					
-			<li>
-				<span class="ability-title">Ionic</span>
-				<span class="ability-score">
-				
-								
-					<span class="glyphicon glyphicon-star filled"></span>
-					
-								
-					<span class="glyphicon glyphicon-star filled"></span>
-					
-								
-					<span class="glyphicon glyphicon-star "></span>
-					<span class="glyphicon glyphicon-star "></span>
-
-
-					
-								
-					<span class="glyphicon glyphicon-star "></span>
-					
-									
-				</span>
-			</li>
-
-			
-					
-				
-		</ul>
-	</div>
-	
-		
-</div>
-
-
-<hr />
-
-<h3>Languages</h3>
-
-<div class="row">
-
-		
-	<div class="col-md-6">
-		<ul class="no-bullets">
-		
-				
-			<li>
-				<span class="ability-title">English(Daily Use)</span>
-				<span class="ability-score">
-				
-								
-					<span class="glyphicon glyphicon-star filled"></span>
-					
-								
-					<span class="glyphicon glyphicon-star filled"></span>
-					
-								
-					<span class="glyphicon glyphicon-star filled"></span>
-					
-								
-					<span class="glyphicon glyphicon-star filled"></span>
-					
-								
-					<span class="glyphicon glyphicon-star filled"></span>
-					
-									
-				</span>
-			</li>
-			
-				
-			 
-			
-		</ul>
-	</div>
-	<div class="col-md-6">
-		<ul class="no-bullets">
-		
-					
-				
-			<li>
-				<span class="ability-title">Urdu(Mother Language)</span>
-				<span class="ability-score">
-				
-								
-					<span class="glyphicon glyphicon-star filled"></span>
-					
-								
-					<span class="glyphicon glyphicon-star filled"></span>
-					<span class="glyphicon glyphicon-star filled"></span>
-					<span class="glyphicon glyphicon-star filled"></span>
-					<span class="glyphicon glyphicon-star filled"></span>
-
-					
-									
-				</span>
-			</li>
-			
-					
-				
-		</ul>
-	</div>
-	
-		
-</div>
-
-<hr />
-
-<h3>Tools</h3>
-
-<div class="row">
-		
-	<div class="col-md-6">
-		<ul class="no-bullets">
-		
-				
-			<li>
-				<span class="ability-title">VS Code (2 years)</span>
-				<span class="ability-score">
-				
-								
-					<span class="glyphicon glyphicon-star filled"></span>
-					
-								
-					<span class="glyphicon glyphicon-star filled"></span>
-					
-								
-					<span class="glyphicon glyphicon-star filled"></span>
-					
-								
-					<span class="glyphicon glyphicon-star filled"></span>
-					
-								
-					<span class="glyphicon glyphicon-star filled"></span>
-					
-									
-				</span>
-			</li>
-			
-					
-			<li>
-				<span class="ability-title">MS Office 4+ years)</span>
-				<span class="ability-score">
-				
-								
-					<span class="glyphicon glyphicon-star filled"></span>
-					
-								
-					<span class="glyphicon glyphicon-star filled"></span>
-					
-								
-					<span class="glyphicon glyphicon-star filled"></span>
-					
-								
-					<span class="glyphicon glyphicon-star filled"></span>
-					
-								
-					<span class="glyphicon glyphicon-star filled"></span>
-					
-									
-				</span>
-			</li>
-			
-			<li>
-				<span class="ability-title">Firebase(1 year)</span>
-				<span class="ability-score">
-				
-								
-					<span class="glyphicon glyphicon-star filled"></span>
-					
-								
-					<span class="glyphicon glyphicon-star filled"></span>
-					
-								
-					<span class="glyphicon glyphicon-star filled"></span>
-					
-								
-					<span class="glyphicon glyphicon-star filled"></span>
-					
-								
-					<span class="glyphicon glyphicon-star filled"></span>
-					
-									
-				</span>
-			</li>
-			
-					
-				
-			<li>
-				<span class="ability-title">MongoDb (1 year)</span>
-				<span class="ability-score">
-				
-								
-					<span class="glyphicon glyphicon-star filled"></span>
-					
-								
-					<span class="glyphicon glyphicon-star filled"></span>
-					
-								
-					<span class="glyphicon glyphicon-star filled"></span>
-					
-								
-					<span class="glyphicon glyphicon-star filled"></span>
-					
-								
-					<span class="glyphicon glyphicon-star filled"></span>
-					
-									
-				</span>
-			</li>
-			
-					
-				
-			<li>
-				<span class="ability-title">Windows (5+ years)</span>
-				<span class="ability-score">
-				
-								
-					<span class="glyphicon glyphicon-star filled"></span>
-					
-								
-					<span class="glyphicon glyphicon-star filled"></span>
-					
-								
-					<span class="glyphicon glyphicon-star filled"></span>
-					
-								
-					<span class="glyphicon glyphicon-star filled"></span>
-					
-								
-					<span class="glyphicon glyphicon-star filled"></span>
-					
-									
-				</span>
-			</li>
-			
-					
-					
-				
-			
-			 
-			
-		</ul>
-	</div>
-	<div class="col-md-6">
-		<ul class="no-bullets">
-			
-					
-				
-			<li>
-				<span class="ability-title">Git (2 year)</span>
-				<span class="ability-score">
-				
-								
-					<span class="glyphicon glyphicon-star filled"></span>
-					
-								
-					<span class="glyphicon glyphicon-star filled"></span>
-					
-								
-					<span class="glyphicon glyphicon-star filled"></span>
-					
-								
-					<span class="glyphicon glyphicon-star filled"></span>
-					
-								
-					<span class="glyphicon glyphicon-star "></span>
-					
-									
-				</span>
-			</li>
-			
-				
-					
-				
-			<li>
-				<span class="ability-title">MAMP (2 year)</span>
-				<span class="ability-score">
-				
-								
-					<span class="glyphicon glyphicon-star filled"></span>
-					
-								
-					<span class="glyphicon glyphicon-star filled"></span>
-					
-								
-					<span class="glyphicon glyphicon-star filled"></span>
-					
-								
-					<span class="glyphicon glyphicon-star filled"></span>
-					
-								
-					<span class="glyphicon glyphicon-star "></span>
-					
-									
-				</span>
-			</li>
-			
-					
-				
-			<li>
-				<span class="ability-title">Webstorm (2 years)</span>
-				<span class="ability-score">
-				
-								
-					<span class="glyphicon glyphicon-star filled"></span>
-					
-								
-					<span class="glyphicon glyphicon-star filled"></span>
-					
-								
-					<span class="glyphicon glyphicon-star filled"></span>
-					
-								
-					<span class="glyphicon glyphicon-star filled"></span>
-					
-								
-					<span class="glyphicon glyphicon-star "></span>
-					
-									
-				</span>
-			</li>
-							
-				
-			<li>
-				<span class="ability-title">Atlassian / Jira (2 years)</span>
-				<span class="ability-score">
-				
-								
-					<span class="glyphicon glyphicon-star filled"></span>
-					
-								
-					<span class="glyphicon glyphicon-star filled"></span>
-					
-								
-					<span class="glyphicon glyphicon-star filled"></span>
-					
-								
-					<span class="glyphicon glyphicon-star filled"></span>
-					
-								
-					<span class="glyphicon glyphicon-star "></span>
-					
-									
-				</span>
-			</li>
-			
-			
-					
-				
-		</ul>
-	</div>
-	
-	</div>			</div>
-		</div>
-		
-		<div id="projects" class="container">
-			<h2>Projects</h2>
-<hr />
-<div class="experiences">	
-	<div class="experience row">
-		<div class="col-md-4">
-			<h4>Angular Projects</h4>
-		</div>
-		<div class="col-md-8">
-			<p>
-				<strong>Admin Portal for YAP Pakistan</strong>
-				<span >
-				    An admin dashboard panel for fintech wallet yap.The purpose are extensive operations related to fintech wallet i.e transaction,roles,kyc,configurations,fee management and
-					compliance screening etc.
-				</span>
-			</p>
-			<p>
-				<strong>Admin Portal for Inventory management</strong>
-				<span >
-				    This portal is made for inventory,roles,products,users and reports management for a POS system for a bakery with 21 branches
-					within the city. It is a complete dashboard admin panel.						
-				</span>
-			</p>
-			<p>
-				<strong>Point of Sales</strong>
-				<span >
-				    A desktop based web application for making a tax Compliant point of sales device. It is a fully featured point of sales software
-					with the facility of working offline too.					
-				</span>
-			</p>
-			<p>
-				<strong>Needle Music ( Audio Bio graphy Application)</strong>
-				<span >
-				    An audio biography web application in which a user can share his best 8 songs through a web url. This application is basically
-					a web application with excellent UI to show people about music interest of a person.				
-				</span>
-			</p>
-			<p>
-				<strong>Ionic Mobile Application</strong>
-				<span >
-					Developed a in house mobile application in ionic. This was basically to deal with people having depression issues and can't communicate openly.
-				</span>
-			</p>
-		</div>
-	</div>
-	
-	<div class="experience row">
-		<div class="col-md-4">
-			<h4>Node Express JS Project</h4>
-		</div>
-		<div class="col-md-8">
-			<p>
-				<strong>Local Client Vendor Management</strong>
-				<span >
-				   For a resume builder application , any user can create a portfolio for himself. So i developed some apis for 
-				   portfolio management system giving CRUD options for resume/portfolio development.
-				</span>
-			</p>
-		
-		</div>
-	</div>
-	<div class="experience row">
-		<div class="col-md-4">
-			<h4>Django Project</h4>
-		</div>
-		<div class="col-md-8">
-			<p>
-				<strong>Local Client Vendor Management</strong>
-				<span >
-				    Development and Deployment of APIs for a local client willing to automate retail sales all over the country.
-					<ol>
-						<li>Creation of visits by local employee on different stores</li>
-						<li> Retrieving all visits by a user</li>
-						<li>Listing of all products of a brands</li>
-						<li>Creating an Admin panel.</li> 
-					  </ol>
-				</span>
-			</p>
-		</div>
-	</div>
-</div>
-	
-		</div>
-		
-		<div class="background-gray">
-			<div id="contact" class="container">
-				<h2>Contact</h2>
-
-
-<hr />
-
-<div class="row">
-	<div class="col-md-6">
-		<ul class="no-bullets">
-		
-			<li>
-				<a href="http://linkedin.nl/in/pascalvgemert/" target="_blank">
-					<span class="icon icon-linkedin"></span>
-					linkedin.com/in/mutahir-sohail				</a>
-			</li>
-		</ul>
-	</div>
-	<div class="col-md-6">
-		<ul class="no-bullets">
-			<!--<li>
-				<a href="javascript:void(0);">
-					<span class="icon icon-skype"></span>
-					pascalvgemert				</a>
-			</li>-->
-			<li>
-				<a href="mailto:mutahirceme786@gmail.com">
-					<span class="icon icon-email"></span>
-					<span >mutahirceme786@gmail.com</span>
-				</a>
-			</li>
-		</ul>
-	</div>
-</div>
-
-<hr />
-
-			</div>
-		</div>
-		
-		<div class="modal fade" id="upgrade-dialog" tabindex="-1" role="dialog" aria-hidden="true">
-	<div class="modal-dialog">
-		<div class="modal-content">
-			<div class="modal-header">
-				<h4 class="modal-title">Your browser is out of date</h4>
-			</div>
-			<div class="modal-body">
-				<p>To get the best possible experience using our site we recommend that you upgrade to a modern web browser. To download a newer web browser click on the Upgrade button.</p>
-			</div>
-			<div class="modal-footer">
-				<a href="http://browsehappy.com/" target="_blank" class="btn btn-primary">Upgrade</a>
-			</div>
-		</div><!-- /.modal-content -->
-	</div><!-- /.modal-dialog -->
-</div><!-- /.modal -->		
-		<!-- Bootstrap core JavaScript -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-
-		<!-- <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> -->
-		<script type="text/javascript" src="./view/js/script.js"></script>
-		<script type="text/javascript" src="./view/js/bootstrap.min.js"></script>
-		
-		<!-- Google Analytics -->
-		<script type="text/javascript">
-		  var _gaq = _gaq || [];
-		  _gaq.push(['_setAccount', 'UA-3361587-8']);
-		  _gaq.push(['_trackPageview']);
-		
-		  (function() {
-			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-		  })();
-		</script>
-	</body>
+    <!-- Begin Inspectlet Embed Code -->
+    <script type="text/javascript" id="inspectletjs">
+      window.__insp = window.__insp || [];
+      __insp.push(['wid', 92785244]);
+      (function() {
+        function __ldinsp() {
+          var insp = document.createElement('script');
+          insp.type = 'text/javascript';
+          insp.async = true;
+          insp.id = "inspsync";
+          insp.src = ('https:' == document.location.protocol ? 'https' : 'http') + '://www.inspectlet.com/inspectlet.js';
+          var x = document.getElementsByTagName('script')[0];
+          x.parentNode.insertBefore(insp, x);
+        }
+        if (window.attachEvent) {
+          window.attachEvent('onload', __ldinsp);
+        } else {
+          window.addEventListener('load', __ldinsp, false);
+        }
+      })();
+    </script>
+    <!-- End Inspectlet Embed Code -->
+  </head>
+  <body data-spy="scroll" data-target="#navbar-example">
+    <div id="top" class="jumbotron" data-src="/view/images/taxi_drive_by_animation.gif" data-position="center center">
+      <div class="container">
+        <h1>Mutahir Sohail</h1>
+        <p class="lead">Interactive resume</p>
+      </div>
+      <div class="overlay"></div>
+      <a href="#profile" class="scroll-down">
+        <span class="glyphicon glyphicon-chevron-down"></span>
+      </a>
+    </div>
+    <nav class="navbar navbar-default" id="navbar-example" role="navigation">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse navbar-ex1-collapse">
+        <ul class="nav navbar-nav">
+          <li class="active">
+            <a href="#profile">Profile</a>
+          </li>
+          <li>
+            <a href="#experiences">Experiences</a>
+          </li>
+          <li>
+            <a href="#abilities">Abilities</a>
+          </li>
+          <li>
+            <a href="#projects">Projects</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </nav>
+    <div class="background-white">
+      <div id="profile" class="container">
+        <h2>Profile</h2>
+        <p class="lead">I&#039;m a creative JavaScript developer</p>
+        <hr />
+        <div class="row">
+          <div class="col-md-4">
+            <h3>About me</h3>
+            <p> I am an allround javascript developer. I am a professional front end developer with expertise in Angular and good knowledge of back-end api development too. Code scalability, optimization and structure is what I love during coding.Problem solving is one of my best traits and this has helped me a lot improving my attention to detail in development. Lastly , team collaboration is one of the most beautiful aspect of product development and I enjoy working as a team.
+          </div>
+          <div class="col-md-4 text-center">
+            <img style="border-radius:50% ;" src="./view/images/1517044907635.jpg" alt="Pascal van Gemert" width="246" height="246" />
+          </div>
+          <div class="col-md-4">
+            <h3>Details</h3>
+            <p>
+              <strong>Name:</strong>
+              <br /> Mutahir Sohail <br />
+              <strong>Age:</strong>
+              <br /> 27 years <br />
+              <strong>Location:</strong>
+              <br /> Lahore, Pakistan
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="experiences" class="container">
+      <h2>Experiences</h2>
+      <hr />
+      <h3>Educations</h3>
+      <div class="experiences">
+        <div class="experience row">
+          <div class="col-md-4">
+            <h4>National University of Science and Technology(NUST)</h4>
+            <p class="experience-period"> Sept 2014 - June 2018 </p>
+          </div>
+          <div class="col-md-8">
+            <p>
+              <strong>Bachelor - Electrical Engineering Science</strong>
+              <span class="hidden-phone"> My courses in Electrical Engineering were more inclined towards coding. We studied OOP,Datastructures,Basic programming and databases. Moreover, we had embedded systems which was assembly language based. My final year project was related to Machine Learning and Embedded systems in which we used Python Programming language. </span>
+              <span class="experience-details">
+                <span class="location">
+                  <span class="glyphicon glyphicon-map-marker"></span> 'Islamabad, Pakistan </span>
+              </span>
+            </p>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <h3>Careers</h3>
+      <div class="experiences">
+        <div class="experience row">
+          <div class="col-md-4">
+            <h4>Tcp Software (Time Clock Plus)</h4>
+            <p class="experience-period"> May 2023 - Present </p>
+          </div>
+          <div class="col-md-8">
+            <p>
+              <strong>Senior Software Engineer</strong>
+              <span class="hidden-phone"> Time clock Plus is a product to provide software and hardware solutions that help organizations track and schedule employee time, manage labor costs, and comply with state and federal regulations. 
+				<br>
+				<b>My role:</b>
+				<br>
+				- Frontend Developer in a transition project. Scratch level revamping of a grand legacy Angular JS application to Angular 2+. 
+				<br>
+				- Creating a custom design lib using prime Ng for building product architecture 
+				<br>
+				- Development and Unit testing 
+				<br>
+				- Peer code reviews to ensure the quality of the product.
+				 <span class="experience-details">
+                  <span class="location">
+                    <span class="glyphicon glyphicon-map-marker"></span> Lahore </span>
+                  <span class="seperator">|</span>
+                  <span class="link">
+                    <span class="glyphicon glyphicon-link"></span>
+                    <a href="https://www.tcpsoftware.com/" target="_blank">https://www.tcpsoftware.com/</a>
+                  </span>
+                </span>
+            </p>
+          </div>
+        </div>
+        <div class="experience row">
+          <div class="col-md-4">
+            <h4>Digitify</h4>
+            <p class="experience-period"> Feb 2022 - May 2023 </p>
+          </div>
+          <div class="col-md-8">
+            <p>
+              <strong>Software Engineer</strong>
+              <span class="hidden-phone"> I am working as an Angular Developer for development of couple of Admin dashboard panels for Operations Team. These dashboards are being linked to a fintech wallet. The purpose are extensive operations related to fintech wallet i.e transaction,roles,kyc,configurations,fee management and compliance screening etc. <span class="experience-details">
+                  <span class="location">
+                    <span class="glyphicon glyphicon-map-marker"></span> Lahore </span>
+                  <span class="seperator">|</span>
+                  <span class="link">
+                    <span class="glyphicon glyphicon-link"></span>
+                    <a href="https://digitify.com/" target="_blank">https://digitify.com/</a>
+                  </span>
+                </span>
+            </p>
+          </div>
+        </div>
+        <div class="experience row">
+          <div class="col-md-4">
+            <h4>Emblem technologies</h4>
+            <p class="experience-period"> Apr 2021 - Jan 2022 </p>
+          </div>
+          <div class="col-md-8">
+            <p>
+              <strong>Fulltime - Angular Developer</strong>
+              <span class="hidden-phone"> Working as a Front End Developer(Angular). I am working on a Tax Compliant Point of Sales(POS) for a bakery with 21 branches within the city. Also I am working on their admin portal that is responsible for reports ,roles, inventory and products management. I have also working as a team lead for a project in the front end team managing two junior developers. <span class="experience-details">
+                  <span class="location">
+                    <span class="glyphicon glyphicon-map-marker"></span> Lahore </span>
+                  <span class="seperator">|</span>
+                  <span class="link">
+                    <span class="glyphicon glyphicon-link"></span>
+                    <a href="http://startselect.com" target="_blank">https://www.emblemtechnologies.com/</a>
+                  </span>
+                </span>
+            </p>
+          </div>
+        </div>
+        <div class="experience row">
+          <div class="col-md-4">
+            <h4>Devstudio</h4>
+            <p class="experience-period"> Jan 2020 - Mar 2021 </p>
+          </div>
+          <div class="col-md-8">
+            <p>
+              <strong>Fulltime - Angular Developer</strong>
+              <span class="hidden-phone"> I joined this company as an intern software engineer. I have worked on couple of projects in this company. I have woeked on a basic resume builder application using nodeJS and Angular. Moreover, I have worked on a client web application that was basically a real time dashboard giving logs of products being scanned remotely. Also I have worked as an ionic developer on an in house application. <span class="experience-details">
+                  <span class="location">
+                    <span class="glyphicon glyphicon-map-marker"></span> Lahore, Pakistan </span>
+                  <span class="seperator">|</span>
+                  <span class="link">
+                    <span class="glyphicon glyphicon-link"></span>
+                    <a href="http://thesecretlab.nl" target="_blank">https://devstudio.us/</a>
+                  </span>
+                </span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="background-white">
+      <div id="abilities" class="container">
+        <h2>Abilities</h2>
+        <p class="lead"> &ldquo;knowledge has a beginning but no end&rdquo; <br />- Talib Kweli </p>
+        <hr />
+        <h3>Skills</h3>
+        <div class="row">
+          <div class="col-md-6">
+            <ul class="no-bullets">
+              <li>
+                <span class="ability-title">Javascript</span>
+                <span class="ability-score">
+                  <span class="glyphicon glyphicon-star filled"></span>
+                  <span class="glyphicon glyphicon-star filled"></span>
+                  <span class="glyphicon glyphicon-star filled"></span>
+                  <span class="glyphicon glyphicon-star filled"></span>
+                  <span class="glyphicon glyphicon-star "></span>
+                </span>
+              </li>
+              <li>
+                <span class="ability-title">Typescript</span>
+                <span class="ability-score">
+                  <span class="glyphicon glyphicon-star filled"></span>
+                  <span class="glyphicon glyphicon-star filled"></span>
+                  <span class="glyphicon glyphicon-star filled"></span>
+                  <span class="glyphicon glyphicon-star filled"></span>
+                  <span class="glyphicon glyphicon-star "></span>
+                </span>
+              </li>
+              <li>
+                <span class="ability-title">Angular</span>
+                <span class="ability-score">
+                  <span class="glyphicon glyphicon-star filled"></span>
+                  <span class="glyphicon glyphicon-star filled"></span>
+                  <span class="glyphicon glyphicon-star filled"></span>
+                  <span class="glyphicon glyphicon-star filled"></span>
+                  <span class="glyphicon glyphicon-star "></span>
+                </span>
+              </li>
+			  <li>
+                <span class="ability-title">Tailwind</span>
+                <span class="ability-score">
+                  <span class="glyphicon glyphicon-star filled"></span>
+                  <span class="glyphicon glyphicon-star filled"></span>
+                  <span class="glyphicon glyphicon-star filled"></span>
+                  <span class="glyphicon glyphicon-star filled"></span>
+                  <span class="glyphicon glyphicon-star "></span>
+                </span>
+              </li>
+              <li>
+                <span class="ability-title">Bootstrap Framework</span>
+                <span class="ability-score">
+                  <span class="glyphicon glyphicon-star filled"></span>
+                  <span class="glyphicon glyphicon-star filled"></span>
+                  <span class="glyphicon glyphicon-star filled"></span>
+                  <span class="glyphicon glyphicon-star filled"></span>
+                  <span class="glyphicon glyphicon-star "></span>
+                </span>
+              </li>
+              <li>
+                <span class="ability-title">CSS(3)</span>
+                <span class="ability-score">
+                  <span class="glyphicon glyphicon-star filled"></span>
+                  <span class="glyphicon glyphicon-star filled"></span>
+                  <span class="glyphicon glyphicon-star filled"></span>
+                  <span class="glyphicon glyphicon-star filled"></span>
+                  <span class="glyphicon glyphicon-star "></span>
+                </span>
+              </li>
+              <li>
+                <span class="ability-title">HTML(5)</span>
+                <span class="ability-score">
+                  <span class="glyphicon glyphicon-star filled"></span>
+                  <span class="glyphicon glyphicon-star filled"></span>
+                  <span class="glyphicon glyphicon-star filled"></span>
+                  <span class="glyphicon glyphicon-star filled"></span>
+                  <span class="glyphicon glyphicon-star "></span>
+                </span>
+              </li>
+              <li>
+                <span class="ability-title">Jest Unit Testing</span>
+                <span class="ability-score">
+                  <span class="glyphicon glyphicon-star filled"></span>
+                  <span class="glyphicon glyphicon-star filled"></span>
+                  <span class="glyphicon glyphicon-star filled"></span>
+                  <span class="glyphicon glyphicon-star "></span>
+                  <span class="glyphicon glyphicon-star "></span>
+                </span>
+              </li>
+              <li>
+                <span class="ability-title">Command line Inteface</span>
+                <span class="ability-score">
+                  <span class="glyphicon glyphicon-star filled"></span>
+                  <span class="glyphicon glyphicon-star filled"></span>
+                  <span class="glyphicon glyphicon-star filled"></span>
+                  <span class="glyphicon glyphicon-star "></span>
+                  <span class="glyphicon glyphicon-star "></span>
+                </span>
+              </li>
+              <li>
+                <span class="ability-title">JQuery</span>
+                <span class="ability-score">
+                  <span class="glyphicon glyphicon-star filled"></span>
+                  <span class="glyphicon glyphicon-star filled"></span>
+                  <span class="glyphicon glyphicon-star filled"></span>
+                  <span class="glyphicon glyphicon-star "></span>
+                  <span class="glyphicon glyphicon-star "></span>
+                </span>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-6">
+            <ul class="no-bullets">
+              <li>
+                <span class="ability-title">Object Orientated Programming</span>
+                <span class="ability-score">
+                  <span class="glyphicon glyphicon-star filled"></span>
+                  <span class="glyphicon glyphicon-star filled"></span>
+                  <span class="glyphicon glyphicon-star filled"></span>
+                  <span class="glyphicon glyphicon-star filled"></span>
+                  <span class="glyphicon glyphicon-star "></span>
+                </span>
+              </li>
+              <li>
+                <span class="ability-title">SASS / SCSS</span>
+                <span class="ability-score">
+                  <span class="glyphicon glyphicon-star filled"></span>
+                  <span class="glyphicon glyphicon-star filled"></span>
+                  <span class="glyphicon glyphicon-star filled"></span>
+                  <span class="glyphicon glyphicon-star filled"></span>
+                  <span class="glyphicon glyphicon-star "></span>
+                </span>
+              </li>
+              <li>
+                <span class="ability-title">Node JS</span>
+                <span class="ability-score">
+                  <span class="glyphicon glyphicon-star filled"></span>
+                  <span class="glyphicon glyphicon-star filled"></span>
+                  <span class="glyphicon glyphicon-star "></span>
+                  <span class="glyphicon glyphicon-star "></span>
+                  <span class="glyphicon glyphicon-star "></span>
+                </span>
+              </li>
+              <li>
+                <span class="ability-title">Ionic</span>
+                <span class="ability-score">
+                  <span class="glyphicon glyphicon-star filled"></span>
+                  <span class="glyphicon glyphicon-star filled"></span>
+                  <span class="glyphicon glyphicon-star "></span>
+                  <span class="glyphicon glyphicon-star "></span>
+                  <span class="glyphicon glyphicon-star "></span>
+                </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+        <h3>Languages</h3>
+        <div class="row">
+          <div class="col-md-6">
+            <ul class="no-bullets">
+              <li>
+                <span class="ability-title">English(Daily Use)</span>
+                <span class="ability-score">
+                  <span class="glyphicon glyphicon-star filled"></span>
+                  <span class="glyphicon glyphicon-star filled"></span>
+                  <span class="glyphicon glyphicon-star filled"></span>
+                  <span class="glyphicon glyphicon-star filled"></span>
+                  <span class="glyphicon glyphicon-star filled"></span>
+                </span>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-6">
+            <ul class="no-bullets">
+              <li>
+                <span class="ability-title">Urdu(Mother Language)</span>
+                <span class="ability-score">
+                  <span class="glyphicon glyphicon-star filled"></span>
+                  <span class="glyphicon glyphicon-star filled"></span>
+                  <span class="glyphicon glyphicon-star filled"></span>
+                  <span class="glyphicon glyphicon-star filled"></span>
+                  <span class="glyphicon glyphicon-star filled"></span>
+                </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+        <h3>Tools</h3>
+        <div class="row">
+          <div class="col-md-6">
+            <ul class="no-bullets">
+              <li>
+                <span class="ability-title">VS Code (2 years)</span>
+                <span class="ability-score">
+                  <span class="glyphicon glyphicon-star filled"></span>
+                  <span class="glyphicon glyphicon-star filled"></span>
+                  <span class="glyphicon glyphicon-star filled"></span>
+                  <span class="glyphicon glyphicon-star filled"></span>
+                  <span class="glyphicon glyphicon-star filled"></span>
+                </span>
+              </li>
+              <li>
+                <span class="ability-title">MS Office 4+ years)</span>
+                <span class="ability-score">
+                  <span class="glyphicon glyphicon-star filled"></span>
+                  <span class="glyphicon glyphicon-star filled"></span>
+                  <span class="glyphicon glyphicon-star filled"></span>
+                  <span class="glyphicon glyphicon-star filled"></span>
+                  <span class="glyphicon glyphicon-star filled"></span>
+                </span>
+              </li>
+              <li>
+                <span class="ability-title">Firebase(1 year)</span>
+                <span class="ability-score">
+                  <span class="glyphicon glyphicon-star filled"></span>
+                  <span class="glyphicon glyphicon-star filled"></span>
+                  <span class="glyphicon glyphicon-star filled"></span>
+                  <span class="glyphicon glyphicon-star filled"></span>
+                  <span class="glyphicon glyphicon-star filled"></span>
+                </span>
+              </li>
+              <li>
+                <span class="ability-title">MongoDb (1 year)</span>
+                <span class="ability-score">
+                  <span class="glyphicon glyphicon-star filled"></span>
+                  <span class="glyphicon glyphicon-star filled"></span>
+                  <span class="glyphicon glyphicon-star filled"></span>
+                  <span class="glyphicon glyphicon-star filled"></span>
+                  <span class="glyphicon glyphicon-star filled"></span>
+                </span>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-6">
+            <ul class="no-bullets">
+              <li>
+                <span class="ability-title">Git (2 year)</span>
+                <span class="ability-score">
+                  <span class="glyphicon glyphicon-star filled"></span>
+                  <span class="glyphicon glyphicon-star filled"></span>
+                  <span class="glyphicon glyphicon-star filled"></span>
+                  <span class="glyphicon glyphicon-star filled"></span>
+                  <span class="glyphicon glyphicon-star "></span>
+                </span>
+              </li>
+              <li>
+                <span class="ability-title">Webstorm (2 years)</span>
+                <span class="ability-score">
+                  <span class="glyphicon glyphicon-star filled"></span>
+                  <span class="glyphicon glyphicon-star filled"></span>
+                  <span class="glyphicon glyphicon-star filled"></span>
+                  <span class="glyphicon glyphicon-star filled"></span>
+                  <span class="glyphicon glyphicon-star "></span>
+                </span>
+              </li>
+              <li>
+                <span class="ability-title">Atlassian / Jira (2 years)</span>
+                <span class="ability-score">
+                  <span class="glyphicon glyphicon-star filled"></span>
+                  <span class="glyphicon glyphicon-star filled"></span>
+                  <span class="glyphicon glyphicon-star filled"></span>
+                  <span class="glyphicon glyphicon-star filled"></span>
+                  <span class="glyphicon glyphicon-star "></span>
+                </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="projects" class="container">
+      <h2>Projects</h2>
+      <hr />
+      <div class="experiences">
+        <div class="experience row">
+          <div class="col-md-4">
+            <h4>Angular Projects</h4>
+          </div>
+          <div class="col-md-8">
+            <p>
+              <strong>Transition Project from Angular JS to Angular 2+</strong>
+              <span> Scratch level transitioning of a legacy application front end built in angular JS to angular 2+ Building own custom design library using prime ng as a helping hand. Transitioning javascript application into completely typescript. Developing via test driven development using Jest for unit testing. </span>
+            </p>
+            <p>
+              <strong>Admin Portal for YAP Pakistan</strong>
+              <span> An admin dashboard panel for fintech wallet yap.The purpose are extensive operations related to fintech wallet i.e transaction,roles,kyc,configurations,fee management and compliance screening etc. </span>
+            </p>
+            <p>
+              <strong>Admin Portal for Inventory management</strong>
+              <span> This portal is made for inventory,roles,products,users and reports management for a POS system for a bakery with 21 branches within the city. It is a complete dashboard admin panel. </span>
+            </p>
+            <p>
+              <strong>Point of Sales</strong>
+              <span> A desktop based web application for making a tax Compliant point of sales device. It is a fully featured point of sales software with the facility of working offline too. </span>
+            </p>
+            <p>
+              <strong>Needle Music ( Audio Bio graphy Application)</strong>
+              <span> An audio biography web application in which a user can share his best 8 songs through a web url. This application is basically a web application with excellent UI to show people about music interest of a person. </span>
+            </p>
+            <p>
+              <strong>Ionic Mobile Application</strong>
+              <span> Developed a in house mobile application in ionic. This was basically to deal with people having depression issues and can't communicate openly. </span>
+            </p>
+          </div>
+        </div>
+        <div class="experience row">
+          <div class="col-md-4">
+            <h4>Node Express JS Project</h4>
+          </div>
+          <div class="col-md-8">
+            <p>
+              <strong>Local Client Vendor Management</strong>
+              <span> For a resume builder application , any user can create a portfolio for himself. So i developed some apis for portfolio management system giving CRUD options for resume/portfolio development. </span>
+            </p>
+          </div>
+        </div>
+        <div class="experience row">
+          <div class="col-md-4">
+            <h4>Django Project</h4>
+          </div>
+          <div class="col-md-8">
+            <p>
+              <strong>Local Client Vendor Management</strong>
+              <span> Development and Deployment of APIs for a local client willing to automate retail sales all over the country. <ol>
+                  <li>Creation of visits by local employee on different stores</li>
+                  <li> Retrieving all visits by a user</li>
+                  <li>Listing of all products of a brands</li>
+                  <li>Creating an Admin panel.</li>
+                </ol>
+              </span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="background-gray">
+      <div id="contact" class="container">
+        <h2>Contact</h2>
+        <hr />
+        <div class="row">
+          <div class="col-md-6">
+            <ul class="no-bullets">
+              <li>
+                <a href="http://linkedin.nl/in/pascalvgemert/" target="_blank">
+                  <span class="icon icon-linkedin"></span> linkedin.com/in/mutahir-sohail </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-6">
+            <ul class="no-bullets">
+              <li>
+                <a href="mailto:mutahirceme786@gmail.com">
+                  <span class="icon icon-email"></span>
+                  <span>mutahirceme786@gmail.com</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+      </div>
+    </div>
+    <div class="modal fade" id="upgrade-dialog" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Your browser is out of date</h4>
+          </div>
+          <div class="modal-body">
+            <p>To get the best possible experience using our site we recommend that you upgrade to a modern web browser. To download a newer web browser click on the Upgrade button.</p>
+          </div>
+          <div class="modal-footer">
+            <a href="http://browsehappy.com/" target="_blank" class="btn btn-primary">Upgrade</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./view/js/script.js"></script>
+    <script type="text/javascript" src="./view/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-3361587-8']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script');
+        ga.type = 'text/javascript';
+        ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+  </body>
 </html>
